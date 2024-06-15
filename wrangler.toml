@@ -1,0 +1,8 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "backend"
+main = "src/index.ts"
+compatibility_date = "2024-05-02"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiZmE3ODU0MjItNmMwZS00OTg1LThiNGMtOTlhMGVlNGU1ODBjIiwidGVuYW50X2lkIjoiNjgyZTU0YWVjMDZkNjA4YTkzYTk5NzliMTAxMmYxM2I0NmQzOTRhNDEzMjVjMGY1YjhmNTY4N2ZhMTIxNmRmYSIsImludGVybmFsX3NlY3JldCI6IjA1MWM0MzQ2LTU5ZDAtNDQ5Ni05OTZiLTk0M2I4MTBjOTdiZSJ9.5w1jDrXTGiy7XU9xQXaJe0vevVKfVsj18f7EXz_JVpk"
