@@ -16,6 +16,7 @@ datasource db {
 model User {
   id       String   @id @default(uuid())
   email    String   @unique
+  username String   @unique
   name     String?
   password String
   posts    Post[]
@@ -25,7 +26,7 @@ model Post {
   id        String   @id @default(uuid())
   title     String
   content   String
+  authorId  String
   published Boolean  @default(false)
   author    User     @relation(fields: [authorId], references: [id])
-  authorId  String
 }
